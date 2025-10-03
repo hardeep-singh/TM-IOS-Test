@@ -30,7 +30,7 @@ class HTTPClientImp: HTTPClient {
     func get<T: Decodable>(url: URL) async throws -> T {
         
         var req = URLRequest(url: url)
-        req.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        req.setValue("/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         req.setValue(authenticator.authorizationHeader(), forHTTPHeaderField: "Authorization")
         
         let (data, resp) = try await session.data(for: req)
@@ -43,6 +43,14 @@ class HTTPClientImp: HTTPClient {
             throw HTTPError(status: http.statusCode, body: body)
         }
         
+#if DEBUG
+        do {
+            let jsonObject = try JSONSerialization.jsonObject(with: data)
+            print(jsonObject)
+        } catch {
+            print(error)
+        }
+#endif
         return try JSONDecoder().decode(T.self, from: data)
     }
     

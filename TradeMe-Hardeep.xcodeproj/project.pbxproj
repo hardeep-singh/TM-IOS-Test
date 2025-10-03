@@ -28,6 +28,7 @@
 		4960A7542E8FB6E0005017C8 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A7532E8FB6DA005017C8 /* HTTPClient.swift */; };
 		4960A7562E8FB7BA005017C8 /* OAuth1Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A7552E8FB7B8005017C8 /* OAuth1Authenticator.swift */; };
 		4960A75C2E8FBC10005017C8 /* ListingsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A75B2E8FBC0B005017C8 /* ListingsEndPoint.swift */; };
+		4960A75F2E8FD208005017C8 /* MockListingLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A75E2E8FD203005017C8 /* MockListingLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		4960A7532E8FB6DA005017C8 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		4960A7552E8FB7B8005017C8 /* OAuth1Authenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth1Authenticator.swift; sourceTree = "<group>"; };
 		4960A75B2E8FBC0B005017C8 /* ListingsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsEndPoint.swift; sourceTree = "<group>"; };
+		4960A75E2E8FD203005017C8 /* MockListingLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListingLoader.swift; sourceTree = "<group>"; };
 		49F630852E8F4E5200167ABA /* TradeMe-Hardeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TradeMe-Hardeep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 		4960A6362E8F552B005017C8 /* TradeMe-Hardeep */ = {
 			isa = PBXGroup;
 			children = (
+				4960A75D2E8FD1F8005017C8 /* MockListingLoader */,
 				4960A64F2E8F59EA005017C8 /* Info.plist */,
 				4960A7522E8FB6CE005017C8 /* Networking */,
 				4960A74D2E8FB0BC005017C8 /* ListingLoader */,
@@ -182,6 +185,14 @@
 				4960A7532E8FB6DA005017C8 /* HTTPClient.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		4960A75D2E8FD1F8005017C8 /* MockListingLoader */ = {
+			isa = PBXGroup;
+			children = (
+				4960A75E2E8FD203005017C8 /* MockListingLoader.swift */,
+			);
+			path = MockListingLoader;
 			sourceTree = "<group>";
 		};
 		49F6307C2E8F4E5200167ABA = {
@@ -291,6 +302,7 @@
 				4960A64E2E8F5761005017C8 /* Colors+Typography.swift in Sources */,
 				4960A6522E8F5A92005017C8 /* TMPlaceholderView.swift in Sources */,
 				4960A65D2E8F7D24005017C8 /* TMImageView.swift in Sources */,
+				4960A75F2E8FD208005017C8 /* MockListingLoader.swift in Sources */,
 				4960A6542E8F755E005017C8 /* LatestListingsViewModel.swift in Sources */,
 				4960A6382E8F552B005017C8 /* TradeMe_HardeepApp.swift in Sources */,
 			);

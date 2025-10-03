@@ -19,5 +19,4 @@ struct UIOListing: Identifiable {
     let thumbnil: UIOImageType
     let displayPrice: UIODisplayPrice?
     let buyNowPrice: String?
-//    let listingType: UIOListingType
 }

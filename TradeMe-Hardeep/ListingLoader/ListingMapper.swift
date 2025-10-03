@@ -33,6 +33,7 @@ struct ListingMapper {
         let PriceDisplay: String
         let PictureHref: String?
         let IsClassified: Bool?
+        let PhotoUrls: [String]?
         
     }
 
@@ -60,6 +61,7 @@ private extension Listing {
        
         self.priceDisplay = response.PriceDisplay
         self.pictureHref = response.PictureHref
+        self.images = response.PhotoUrls ?? []
         self.isClassified = response.IsClassified ?? false
     }
     

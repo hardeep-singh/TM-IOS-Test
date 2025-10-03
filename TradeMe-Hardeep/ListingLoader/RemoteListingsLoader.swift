@@ -24,6 +24,7 @@ struct Listing {
     let priceDisplay: String
     let pictureHref: String?
     let isClassified: Bool
+    let images: [String]
     
 }
 

@@ -14,17 +14,21 @@ struct LatestListingsView: View {
     var body: some View {
         NavigationStack {
             List(viewModel.listings) { listing in
-                ListingRowView(listing: listing, tap: didSelect)
+                ListingRowView(listing: listing, tapOn: didSelect)
             }
-            .listStyle(PlainListStyle())
+            .listStyle(.plain)
             .navigationTitle(Constants.DiscoverScreen.navTitle)
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItemGroup(placement: .topBarTrailing) {
                     NavigationBarButtons(viewModel: viewModel)
                 }
             }
             .alert(item: $viewModel.alertItem, content: alert(for:))
             .task {
+                await viewModel.fetchListings()
+            }
+            .refreshable {
                 await viewModel.fetchListings()
             }
         }
@@ -35,12 +39,17 @@ struct LatestListingsView: View {
         return Alert(
             title: Text(info.title),
             message: Text(info.message),
-            dismissButton: .default(Text(Constants.ok))
+            dismissButton: .default(Text(item.buttonTitle()))
         )
     }
     
-    private func didSelect(listing: UIOListing) {
-        viewModel.alertItem = .listing
+    private func didSelect(_ type: ListingRowView.ActionType,_ listing: UIOListing) {
+        switch type {
+        case .row:
+            viewModel.alertItem = .listing(listing)
+        case .buyNow:
+            viewModel.alertItem = .buyNow(listing)
+        }
     }
     
 }
@@ -50,9 +59,9 @@ private struct NavigationBarButtons: View {
     
     var body: some View {
         HStack {
-            Button(action: {
+            Button {
                 viewModel.alertItem = .search
-            }) {
+            } label: {
                 Image(ImageName.search)
             }
             .addAccessibility(model: Constants.DiscoverScreen.searchButton)

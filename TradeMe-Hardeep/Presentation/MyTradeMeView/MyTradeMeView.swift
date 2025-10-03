@@ -12,6 +12,7 @@ struct MyTradeMeView: View {
         NavigationStack {
             TMPlaceholderView(title: Constants.MyTradeMe.navTitle)
                 .navigationTitle(Constants.MyTradeMe.navTitle)
+                .navigationBarTitleDisplayMode(.inline)
         }
         
     }

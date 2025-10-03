@@ -11,17 +11,21 @@ import SwiftUI
 struct ListingRowView: View {
     
     let listing: UIOListing
-    private let tap: (UIOListing) -> Void
+    private let tapOn: (ActionType, UIOListing) -> Void
     
+    enum ActionType {
+        case row
+        case buyNow
+    }
     private enum Layout {
         static let cellHeight: CGFloat = 100
         static let imageCornerRadius: CGFloat = 8
         static let rowSpacing: CGFloat = 12
     }
     
-    init(listing: UIOListing, tap: @escaping (UIOListing) -> Void) {
+    init(listing: UIOListing, tapOn: @escaping  (ActionType, UIOListing) -> Void) {
         self.listing = listing
-        self.tap = tap
+        self.tapOn = tapOn
     }
     
     var body: some View {
@@ -56,7 +60,7 @@ struct ListingRowView: View {
             .frame(height: Layout.cellHeight, alignment: .top)
         }
         .contentShape(Rectangle())
-        .onTapGesture { tap(listing) }
+        .onTapGesture { tapOn( .row, listing) }
         .alignmentGuide(.listRowSeparatorLeading) { _ in 0 }
     }
     
@@ -82,9 +86,9 @@ struct ListingRowView: View {
     
     // MARK: - Components
     private func buyNowButton(buyNowPrice: String) -> some View {
-        Button(action: {
-            
-        }) {
+        Button {
+            tapOn(.buyNow, self.listing)
+        } label: {
             VStack(alignment: .trailing, spacing: 2) {
                 titleLabel(text: buyNowPrice)
                 subtitleLabel(text: Constants.DiscoverScreenRow.buyNow)

@@ -13,6 +13,7 @@ struct WatchlistView: View {
         NavigationStack {
             TMPlaceholderView(title: Constants.WatchlistScreen.navTitle)
                 .navigationTitle(Constants.WatchlistScreen.navTitle)
+                .navigationBarTitleDisplayMode(.inline)
         }
         
     }

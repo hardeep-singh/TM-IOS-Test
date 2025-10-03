@@ -58,6 +58,7 @@ struct Constants {
     }
     
     static let ok = "Ok"
+    static let buyNow = "Buy Now"
 }
 
 

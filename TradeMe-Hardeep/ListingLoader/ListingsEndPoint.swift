@@ -15,7 +15,7 @@ extension Endpoints {
     
     enum Listings {
         static func latest(rows: Int = 20,
-                           photoSize: String = "FullSize",
+                           photoSize: String = "Medium",
                            sortOrder: String = "ExpiryDesc") -> URL {
             var url = base.appendingPathComponent("/v1/listings/latest.json")
             var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
