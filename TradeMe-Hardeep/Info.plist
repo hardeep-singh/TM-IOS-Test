@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>TMAPITM_API_KeyKey</key>
+	<string>A1AC63F0332A131A78FAC304D007E7D1</string>
+	<key>TM_API_Sec_Key</key>
+	<string>EC7F18B17A062962C6930A8AE88B16C7</string>
 	<key>UIDesignRequiresCompatibility</key>
 	<true/>
 </dict>

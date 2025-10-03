@@ -12,7 +12,7 @@ struct TabBarView: View {
     var body: some View {
         TabView {
             
-            LatestListingsView(viewModel: MockListingsViewModel())
+            LatestListingsView(viewModel: LatestListingsViewModel())
                 .tabItem { Label(Constants.Tabbar.Discovery.title, image: Constants.Tabbar.Discovery.icon) }
                 .addAccessibility(model: Constants.Tabbar.Discovery.accessibility)
             

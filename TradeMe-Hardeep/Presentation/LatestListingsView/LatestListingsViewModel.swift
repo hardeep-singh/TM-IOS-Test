@@ -34,17 +34,64 @@ class LatestListingsViewModel: ObservableObject {
     
     @Published var listings: [UIOListing] = []
     @Published var alertItem: AlertItemType?
-
-    init() {
-        
+    let listingsLoader: ListingLoader
+    
+    init(listingsLoader: ListingLoader = RemoteListingsLoader()) {
+        self.listingsLoader = listingsLoader
     }
     
     func fetchListings() async {
-        
+        do {
+            self.listings = try await listingsLoader.execute().map { UIOListing(dto: $0) }
+        } catch {
+            
+        }
     }
     
 }
 
+private extension UIOListing {
+    
+    init(dto: Listing) {
+        
+        self.id = dto.id
+        self.title = dto.title ?? ""
+        self.location = dto.region ?? "Unknown"
+        if let pictureHref = dto.pictureHref, let url = URL(string: pictureHref) {
+            self.thumbnil = .remote(url)
+        } else {
+            self.thumbnil = .local("")
+        }
+        
+        var buyNowPrice: String? = nil
+        if let price = dto.buyNowPrice {
+            buyNowPrice = price.formatted(
+                .currency(code: "NZD")
+                .precision(.fractionLength(2)))
+        }
+            
+        if dto.isClassified {
+            self.displayPrice = .init(header: dto.priceDisplay, subheader: nil)
+            self.buyNowPrice = buyNowPrice
+        } else {
+            var subheader: String? = nil
+           switch dto.reserveState {
+            case .met:
+                subheader = "Reserve Met"
+            case .notMet:
+                subheader = "Reserve Not Met"
+            case .none:
+                subheader = "No Reserve"
+            case .notApplicable:
+                subheader = nil
+            }
+            self.displayPrice = .init(header: dto.priceDisplay, subheader: subheader)
+            self.buyNowPrice = buyNowPrice
+        }
+       
+    }
+    
+}
 class MockListingsViewModel: LatestListingsViewModel {
     
     override func fetchListings() async {
@@ -224,8 +271,6 @@ class MockListingsViewModel: LatestListingsViewModel {
                       thumbnil: .remote(URL(string: "https://trademe.tmcdn.co.nz/photoserver/plus/2253052800.jpg")!),
                       displayPrice: .init(header: "$9000", subheader: "Reserve met"),
                       buyNowPrice: "$9000")
-            
-            
         ]
     }
     
