@@ -20,6 +20,9 @@
 		4960A6522E8F5A92005017C8 /* TMPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A6512E8F5A89005017C8 /* TMPlaceholderView.swift */; };
 		4960A6542E8F755E005017C8 /* LatestListingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A6532E8F7559005017C8 /* LatestListingsViewModel.swift */; };
 		4960A6562E8F7591005017C8 /* UIOListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A6552E8F7590005017C8 /* UIOListing.swift */; };
+		4960A6592E8F7B36005017C8 /* ListingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A6582E8F7B2F005017C8 /* ListingRowView.swift */; };
+		4960A65B2E8F7B99005017C8 /* Fonts+Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A65A2E8F7B94005017C8 /* Fonts+Typography.swift */; };
+		4960A65D2E8F7D24005017C8 /* TMImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A65C2E8F7D23005017C8 /* TMImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		4960A6512E8F5A89005017C8 /* TMPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMPlaceholderView.swift; sourceTree = "<group>"; };
 		4960A6532E8F7559005017C8 /* LatestListingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestListingsViewModel.swift; sourceTree = "<group>"; };
 		4960A6552E8F7590005017C8 /* UIOListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOListing.swift; sourceTree = "<group>"; };
+		4960A6582E8F7B2F005017C8 /* ListingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingRowView.swift; sourceTree = "<group>"; };
+		4960A65A2E8F7B94005017C8 /* Fonts+Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts+Typography.swift"; sourceTree = "<group>"; };
+		4960A65C2E8F7D23005017C8 /* TMImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMImageView.swift; sourceTree = "<group>"; };
 		49F630852E8F4E5200167ABA /* TradeMe-Hardeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TradeMe-Hardeep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,8 +101,9 @@
 		4960A63E2E8F55BE005017C8 /* LatestListingsView */ = {
 			isa = PBXGroup;
 			children = (
-				4960A6552E8F7590005017C8 /* UIOListing.swift */,
+				4960A6572E8F7B23005017C8 /* Model */,
 				4960A6532E8F7559005017C8 /* LatestListingsViewModel.swift */,
+				4960A6582E8F7B2F005017C8 /* ListingRowView.swift */,
 				4960A6452E8F55E7005017C8 /* LatestListingsView.swift */,
 			);
 			path = LatestListingsView;
@@ -121,6 +128,7 @@
 		4960A6482E8F5715005017C8 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				4960A65A2E8F7B94005017C8 /* Fonts+Typography.swift */,
 				4960A64D2E8F5760005017C8 /* Colors+Typography.swift */,
 				4960A64B2E8F5752005017C8 /* ImageName.swift */,
 				4960A6492E8F572A005017C8 /* String+Constants.swift */,
@@ -131,9 +139,18 @@
 		4960A6502E8F5A7D005017C8 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				4960A65C2E8F7D23005017C8 /* TMImageView.swift */,
 				4960A6512E8F5A89005017C8 /* TMPlaceholderView.swift */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		4960A6572E8F7B23005017C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4960A6552E8F7590005017C8 /* UIOListing.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		49F6307C2E8F4E5200167ABA = {
@@ -225,8 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4960A6592E8F7B36005017C8 /* ListingRowView.swift in Sources */,
 				4960A64C2E8F5753005017C8 /* ImageName.swift in Sources */,
 				4960A6462E8F55E8005017C8 /* LatestListingsView.swift in Sources */,
+				4960A65B2E8F7B99005017C8 /* Fonts+Typography.swift in Sources */,
 				4960A6442E8F55E2005017C8 /* WatchlistView.swift in Sources */,
 				4960A64A2E8F572F005017C8 /* String+Constants.swift in Sources */,
 				4960A63D2E8F5564005017C8 /* TabbarView.swift in Sources */,
@@ -234,6 +253,7 @@
 				4960A6422E8F55DA005017C8 /* MyTradeMeView.swift in Sources */,
 				4960A64E2E8F5761005017C8 /* Colors+Typography.swift in Sources */,
 				4960A6522E8F5A92005017C8 /* TMPlaceholderView.swift in Sources */,
+				4960A65D2E8F7D24005017C8 /* TMImageView.swift in Sources */,
 				4960A6542E8F755E005017C8 /* LatestListingsViewModel.swift in Sources */,
 				4960A6382E8F552B005017C8 /* TradeMe_HardeepApp.swift in Sources */,
 			);

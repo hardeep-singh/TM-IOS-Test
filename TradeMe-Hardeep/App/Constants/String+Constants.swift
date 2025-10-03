@@ -34,8 +34,8 @@ struct Constants {
     
     struct DiscoverScreen {
         static let navTitle = "Browse"
-        static let SearchButton = AccessibilityModel(id: "discoverScreen.button.search", label: "Search")
-        static let CartButton = AccessibilityModel(id: "discoverScreen.button.cart", label: "Cart")
+        static let searchButton = AccessibilityModel(id: "browseScreen.button.search", label: "Search")
+        static let cartButton = AccessibilityModel(id: "discoverScreen.button.cart", label: "Cart")
     }
     
     struct WatchlistScreen {
@@ -46,6 +46,18 @@ struct Constants {
         static let navTitle = "My Trade Me"
     }
     
+    struct DiscoverScreenRow {
+        static let buyNow = "Buy Now"
+        static let buyNowAccessibility = AccessibilityModel(id: "discoverScreen.row.buyNow", label: "Buy Now")
+        
+        static let location = "Location"
+        static let locationAccessibility = AccessibilityModel(id: "discoverScreen.row.location", label: "Location")
+        
+        static let title = "Title"
+        static let titleAccessibility = AccessibilityModel(id: "discoverScreen.row.title", label: "Title")
+    }
+    
+    static let ok = "Ok"
 }
 
 
@@ -71,12 +83,12 @@ struct AccessibilityModel {
 
 extension View {
     
-    func addAccessibility(model: AccessibilityModel) -> some View {
+    func addAccessibility(model: AccessibilityModel, value: String = "") -> some View {
         self
             .accessibilityIdentifier(model.id)
             .accessibilityLabel(model.label)
             .accessibilityHint(model.hint ?? "")
-            .accessibilityValue(model.value ?? "")
+            .accessibilityValue(model.value ?? value)
             .accessibilityAddTraits(model.traits)
     }
     

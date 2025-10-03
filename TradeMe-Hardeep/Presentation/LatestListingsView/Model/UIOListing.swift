@@ -1,0 +1,23 @@
+//
+//  UIOListing.swift
+//  TradeMe-Hardeep
+//
+//  Created by Hardeep Singh on 03/10/25.
+//
+
+import Foundation
+
+struct UIODisplayPrice {
+    let header: String
+    let subheader: String?
+}
+
+struct UIOListing: Identifiable {
+    let id: Int
+    let location: String
+    let title: String
+    let thumbnil: UIOImageType
+    let displayPrice: UIODisplayPrice?
+    let buyNowPrice: String?
+//    let listingType: UIOListingType
+}
