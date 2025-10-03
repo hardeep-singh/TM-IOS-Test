@@ -21,8 +21,6 @@ This repository contains my submission for the **Technical Challenge**.
 ## ✨ Extras
 
 ### Dark Mode Support
-- Uses semantic colors and system materials to automatically adapt to Light/Dark Mode.
-- Verified contrast for primary text, secondary text, and tappable elements.
 
 ### Centralized Constants
 - All user-facing strings and static values live under `App/Constants/*` to keep copy consistent and avoid magic numbers.
