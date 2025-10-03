@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4960A6382E8F552B005017C8 /* TradeMe_HardeepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A6332E8F552B005017C8 /* TradeMe_HardeepApp.swift */; };
+		4960A6392E8F552B005017C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4960A6302E8F552B005017C8 /* Assets.xcassets */; };
+		4960A63A2E8F552B005017C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4960A6322E8F552B005017C8 /* LaunchScreen.storyboard */; };
+		4960A63D2E8F5564005017C8 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A63C2E8F5560005017C8 /* TabbarView.swift */; };
+		4960A6422E8F55DA005017C8 /* MyTradeMeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A6412E8F55DA005017C8 /* MyTradeMeView.swift */; };
+		4960A6442E8F55E2005017C8 /* WatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A6432E8F55E0005017C8 /* WatchlistView.swift */; };
+		4960A6462E8F55E8005017C8 /* LatestListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A6452E8F55E7005017C8 /* LatestListingsView.swift */; };
+		4960A64A2E8F572F005017C8 /* String+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A6492E8F572A005017C8 /* String+Constants.swift */; };
+		4960A64C2E8F5753005017C8 /* ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A64B2E8F5752005017C8 /* ImageName.swift */; };
+		4960A64E2E8F5761005017C8 /* Colors+Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A64D2E8F5760005017C8 /* Colors+Typography.swift */; };
+		4960A6522E8F5A92005017C8 /* TMPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A6512E8F5A89005017C8 /* TMPlaceholderView.swift */; };
+		4960A6542E8F755E005017C8 /* LatestListingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A6532E8F7559005017C8 /* LatestListingsViewModel.swift */; };
+		4960A6562E8F7591005017C8 /* UIOListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A6552E8F7590005017C8 /* UIOListing.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4960A6302E8F552B005017C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4960A6322E8F552B005017C8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4960A6332E8F552B005017C8 /* TradeMe_HardeepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeMe_HardeepApp.swift; sourceTree = "<group>"; };
+		4960A63C2E8F5560005017C8 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		4960A6412E8F55DA005017C8 /* MyTradeMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTradeMeView.swift; sourceTree = "<group>"; };
+		4960A6432E8F55E0005017C8 /* WatchlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistView.swift; sourceTree = "<group>"; };
+		4960A6452E8F55E7005017C8 /* LatestListingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestListingsView.swift; sourceTree = "<group>"; };
+		4960A6492E8F572A005017C8 /* String+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Constants.swift"; sourceTree = "<group>"; };
+		4960A64B2E8F5752005017C8 /* ImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageName.swift; sourceTree = "<group>"; };
+		4960A64D2E8F5760005017C8 /* Colors+Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Typography.swift"; sourceTree = "<group>"; };
+		4960A64F2E8F59EA005017C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4960A6512E8F5A89005017C8 /* TMPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMPlaceholderView.swift; sourceTree = "<group>"; };
+		4960A6532E8F7559005017C8 /* LatestListingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestListingsViewModel.swift; sourceTree = "<group>"; };
+		4960A6552E8F7590005017C8 /* UIOListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOListing.swift; sourceTree = "<group>"; };
+		49F630852E8F4E5200167ABA /* TradeMe-Hardeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TradeMe-Hardeep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49F630822E8F4E5200167ABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4960A6342E8F552B005017C8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4960A6482E8F5715005017C8 /* Constants */,
+				4960A6302E8F552B005017C8 /* Assets.xcassets */,
+				4960A6322E8F552B005017C8 /* LaunchScreen.storyboard */,
+				4960A6332E8F552B005017C8 /* TradeMe_HardeepApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4960A6352E8F552B005017C8 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4960A6502E8F5A7D005017C8 /* UIComponents */,
+				4960A63B2E8F5535005017C8 /* Tabbar */,
+				4960A63E2E8F55BE005017C8 /* LatestListingsView */,
+				4960A63F2E8F55C5005017C8 /* WatchlistView */,
+				4960A6472E8F55F1005017C8 /* MyTradeMeView */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4960A6362E8F552B005017C8 /* TradeMe-Hardeep */ = {
+			isa = PBXGroup;
+			children = (
+				4960A64F2E8F59EA005017C8 /* Info.plist */,
+				4960A6352E8F552B005017C8 /* Presentation */,
+				4960A6342E8F552B005017C8 /* App */,
+			);
+			path = "TradeMe-Hardeep";
+			sourceTree = "<group>";
+		};
+		4960A63B2E8F5535005017C8 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				4960A63C2E8F5560005017C8 /* TabbarView.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		4960A63E2E8F55BE005017C8 /* LatestListingsView */ = {
+			isa = PBXGroup;
+			children = (
+				4960A6552E8F7590005017C8 /* UIOListing.swift */,
+				4960A6532E8F7559005017C8 /* LatestListingsViewModel.swift */,
+				4960A6452E8F55E7005017C8 /* LatestListingsView.swift */,
+			);
+			path = LatestListingsView;
+			sourceTree = "<group>";
+		};
+		4960A63F2E8F55C5005017C8 /* WatchlistView */ = {
+			isa = PBXGroup;
+			children = (
+				4960A6432E8F55E0005017C8 /* WatchlistView.swift */,
+			);
+			path = WatchlistView;
+			sourceTree = "<group>";
+		};
+		4960A6472E8F55F1005017C8 /* MyTradeMeView */ = {
+			isa = PBXGroup;
+			children = (
+				4960A6412E8F55DA005017C8 /* MyTradeMeView.swift */,
+			);
+			path = MyTradeMeView;
+			sourceTree = "<group>";
+		};
+		4960A6482E8F5715005017C8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4960A64D2E8F5760005017C8 /* Colors+Typography.swift */,
+				4960A64B2E8F5752005017C8 /* ImageName.swift */,
+				4960A6492E8F572A005017C8 /* String+Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4960A6502E8F5A7D005017C8 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				4960A6512E8F5A89005017C8 /* TMPlaceholderView.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		49F6307C2E8F4E5200167ABA = {
+			isa = PBXGroup;
+			children = (
+				4960A6362E8F552B005017C8 /* TradeMe-Hardeep */,
+				49F630862E8F4E5200167ABA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49F630862E8F4E5200167ABA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49F630852E8F4E5200167ABA /* TradeMe-Hardeep.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49F630842E8F4E5200167ABA /* TradeMe-Hardeep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49F630902E8F4E5400167ABA /* Build configuration list for PBXNativeTarget "TradeMe-Hardeep" */;
+			buildPhases = (
+				49F630812E8F4E5200167ABA /* Sources */,
+				49F630822E8F4E5200167ABA /* Frameworks */,
+				49F630832E8F4E5200167ABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TradeMe-Hardeep";
+			packageProductDependencies = (
+			);
+			productName = "TradeMe-Hardeep";
+			productReference = 49F630852E8F4E5200167ABA /* TradeMe-Hardeep.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49F6307D2E8F4E5200167ABA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					49F630842E8F4E5200167ABA = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = 49F630802E8F4E5200167ABA /* Build configuration list for PBXProject "TradeMe-Hardeep" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49F6307C2E8F4E5200167ABA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 49F630862E8F4E5200167ABA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49F630842E8F4E5200167ABA /* TradeMe-Hardeep */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49F630832E8F4E5200167ABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4960A6392E8F552B005017C8 /* Assets.xcassets in Resources */,
+				4960A63A2E8F552B005017C8 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49F630812E8F4E5200167ABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4960A64C2E8F5753005017C8 /* ImageName.swift in Sources */,
+				4960A6462E8F55E8005017C8 /* LatestListingsView.swift in Sources */,
+				4960A6442E8F55E2005017C8 /* WatchlistView.swift in Sources */,
+				4960A64A2E8F572F005017C8 /* String+Constants.swift in Sources */,
+				4960A63D2E8F5564005017C8 /* TabbarView.swift in Sources */,
+				4960A6562E8F7591005017C8 /* UIOListing.swift in Sources */,
+				4960A6422E8F55DA005017C8 /* MyTradeMeView.swift in Sources */,
+				4960A64E2E8F5761005017C8 /* Colors+Typography.swift in Sources */,
+				4960A6522E8F5A92005017C8 /* TMPlaceholderView.swift in Sources */,
+				4960A6542E8F755E005017C8 /* LatestListingsViewModel.swift in Sources */,
+				4960A6382E8F552B005017C8 /* TradeMe_HardeepApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		49F6308E2E8F4E5400167ABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49F6308F2E8F4E5400167ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49F630912E8F4E5400167ABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TradeMe-Hardeep/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = TradeMe;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hardeep.TradeMe-Hardeep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49F630922E8F4E5400167ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TradeMe-Hardeep/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = TradeMe;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hardeep.TradeMe-Hardeep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49F630802E8F4E5200167ABA /* Build configuration list for PBXProject "TradeMe-Hardeep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F6308E2E8F4E5400167ABA /* Debug */,
+				49F6308F2E8F4E5400167ABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49F630902E8F4E5400167ABA /* Build configuration list for PBXNativeTarget "TradeMe-Hardeep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F630912E8F4E5400167ABA /* Debug */,
+				49F630922E8F4E5400167ABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49F6307D2E8F4E5200167ABA /* Project object */;
+}
