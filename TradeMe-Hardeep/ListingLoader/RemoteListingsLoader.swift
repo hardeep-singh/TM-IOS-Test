@@ -36,7 +36,7 @@ class RemoteListingsLoader: ListingLoader {
     
     let httpClient: HTTPClient
     
-    init(httpClient: HTTPClient = HTTPClientImp()) {
+    init(httpClient: HTTPClient) {
         self.httpClient = httpClient
     }
     

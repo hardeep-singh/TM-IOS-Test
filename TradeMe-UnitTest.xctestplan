@@ -1,0 +1,41 @@
+{
+  "configurations" : [
+    {
+      "id" : "B101DF0A-5B8D-42A5-8CED-5973D0502520",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "commandLineArgumentEntries" : [
+      {
+        "argument" : "UnitTest"
+      }
+    ],
+    "environmentVariableEntries" : [
+      {
+        "key" : "APP_Launch",
+        "value" : "UnitTests"
+      }
+    ],
+    "performanceAntipatternCheckerEnabled" : true,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:TradeMe-Hardeep.xcodeproj",
+      "identifier" : "49F630842E8F4E5200167ABA",
+      "name" : "TradeMe-Hardeep"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:TradeMe-Hardeep.xcodeproj",
+        "identifier" : "49C5CBA72E9083700019EF17",
+        "name" : "TradeMe-AppTests"
+      }
+    }
+  ],
+  "version" : 1
+}

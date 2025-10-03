@@ -7,7 +7,17 @@
 
 import Foundation
 
+class MockLoader: ListingLoader {
+    func execute() async throws -> [Listing] {
+        return []
+    }
+}
+
 class MockListingsViewModel: LatestListingsViewModel {
+    
+    init() {
+        super.init(listingsLoader: MockLoader())
+    }
     
     override func fetchListings() async {
         

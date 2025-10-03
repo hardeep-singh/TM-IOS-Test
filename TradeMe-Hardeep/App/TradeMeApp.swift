@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct TradeMeApp: App {
+    private let coordinator = LaunchCoordinator()
     var body: some Scene {
         WindowGroup {
-            TabBarView()
+            coordinator.start()
         }
     }
 }

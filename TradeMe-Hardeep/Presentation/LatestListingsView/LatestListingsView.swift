@@ -77,6 +77,6 @@ private struct NavigationBarButtons: View {
 }
 
 #Preview {
-    LatestListingsView(viewModel: LatestListingsViewModel())
+    LatestListingsView(viewModel: MockListingsViewModel())
 }
 

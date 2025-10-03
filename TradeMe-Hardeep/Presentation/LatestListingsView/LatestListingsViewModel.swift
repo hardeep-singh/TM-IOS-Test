@@ -51,7 +51,7 @@ class LatestListingsViewModel: ObservableObject {
     @Published var alertItem: AlertItemType?
     let listingsLoader: ListingLoader
     
-    init(listingsLoader: ListingLoader = RemoteListingsLoader()) {
+    init(listingsLoader: ListingLoader) {
         self.listingsLoader = listingsLoader
     }
     
