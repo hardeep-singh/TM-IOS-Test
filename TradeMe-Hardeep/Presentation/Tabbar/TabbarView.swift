@@ -12,7 +12,7 @@ struct TabBarView: View {
     var body: some View {
         TabView {
             
-            LatestListingsView(viewModel: MockListingsViewModel())
+            LatestListingsView(viewModel: makeLatestListingsViewModel())
                 .tabItem { Label(Constants.Tabbar.Discovery.title, image: Constants.Tabbar.Discovery.icon) }
                 .addAccessibility(model: Constants.Tabbar.Discovery.accessibility)
             
@@ -29,6 +29,14 @@ struct TabBarView: View {
         
     }
     
+}
+
+private func makeLatestListingsViewModel() -> LatestListingsViewModel {
+    if let mock = ProcessInfo.processInfo.environment["MOCK-DATA"], mock == "TRUE" {
+        return MockListingsViewModel()
+    } else {
+        return LatestListingsViewModel()
+    }
 }
 
 #Preview {

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4960A6382E8F552B005017C8 /* TradeMe_HardeepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A6332E8F552B005017C8 /* TradeMe_HardeepApp.swift */; };
+		4960A6382E8F552B005017C8 /* TradeMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A6332E8F552B005017C8 /* TradeMeApp.swift */; };
 		4960A6392E8F552B005017C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4960A6302E8F552B005017C8 /* Assets.xcassets */; };
 		4960A63A2E8F552B005017C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4960A6322E8F552B005017C8 /* LaunchScreen.storyboard */; };
 		4960A63D2E8F5564005017C8 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A63C2E8F5560005017C8 /* TabbarView.swift */; };
@@ -34,7 +34,7 @@
 /* Begin PBXFileReference section */
 		4960A6302E8F552B005017C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4960A6322E8F552B005017C8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4960A6332E8F552B005017C8 /* TradeMe_HardeepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeMe_HardeepApp.swift; sourceTree = "<group>"; };
+		4960A6332E8F552B005017C8 /* TradeMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeMeApp.swift; sourceTree = "<group>"; };
 		4960A63C2E8F5560005017C8 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		4960A6412E8F55DA005017C8 /* MyTradeMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTradeMeView.swift; sourceTree = "<group>"; };
 		4960A6432E8F55E0005017C8 /* WatchlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistView.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 				4960A6482E8F5715005017C8 /* Constants */,
 				4960A6302E8F552B005017C8 /* Assets.xcassets */,
 				4960A6322E8F552B005017C8 /* LaunchScreen.storyboard */,
-				4960A6332E8F552B005017C8 /* TradeMe_HardeepApp.swift */,
+				4960A6332E8F552B005017C8 /* TradeMeApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -304,7 +304,7 @@
 				4960A65D2E8F7D24005017C8 /* TMImageView.swift in Sources */,
 				4960A75F2E8FD208005017C8 /* MockListingLoader.swift in Sources */,
 				4960A6542E8F755E005017C8 /* LatestListingsViewModel.swift in Sources */,
-				4960A6382E8F552B005017C8 /* TradeMe_HardeepApp.swift in Sources */,
+				4960A6382E8F552B005017C8 /* TradeMeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

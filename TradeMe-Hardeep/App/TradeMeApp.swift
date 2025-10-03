@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct TradeMe_HardeepApp: App {
+struct TradeMeApp: App {
     var body: some Scene {
         WindowGroup {
             TabBarView()

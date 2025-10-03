@@ -24,8 +24,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="101" translatesAutoresizingMaskIntoConstraints="NO" id="OJk-x9-zOA">
                                 <rect key="frame" x="50" y="337.33333333333331" width="293" height="77.333333333333314"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TradeMe_Motors_Primary" translatesAutoresizingMaskIntoConstraints="NO" id="6QQ-Ir-yud">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TradeMe_Motors_Primary" translatesAutoresizingMaskIntoConstraints="NO" id="6QQ-Ir-yud">
                                         <rect key="frame" x="23.333333333333329" y="0.0" width="246.33333333333337" height="77.333333333333329"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
