@@ -84,7 +84,7 @@ private func makeListingResponse(count: Int = 20) -> ListingMapper.RemoteListing
 }
 
 /// Safe mock: never force-casts silently; records called URLs.
-final class MockHTTPClient: HTTPClient {
+private final class MockHTTPClient: HTTPClient {
     
     enum ResponseType {
         case success(ListingMapper.RemoteListingResponse)

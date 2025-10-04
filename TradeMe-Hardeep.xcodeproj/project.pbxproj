@@ -32,6 +32,7 @@
 		49C5CBB62E908C480019EF17 /* LaunchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5CBB52E908C430019EF17 /* LaunchCoordinator.swift */; };
 		49C5CBBA2E9090690019EF17 /* ListingsLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5CBB82E9090690019EF17 /* ListingsLoaderTests.swift */; };
 		49C5CBC02E9097980019EF17 /* LatestListingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5CBBF2E9097970019EF17 /* LatestListingsViewModelTests.swift */; };
+		49C5CC202E90A50C0019EF17 /* ListingsIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5CC1F2E90A5000019EF17 /* ListingsIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		49C5CBB52E908C430019EF17 /* LaunchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCoordinator.swift; sourceTree = "<group>"; };
 		49C5CBB82E9090690019EF17 /* ListingsLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsLoaderTests.swift; sourceTree = "<group>"; };
 		49C5CBBF2E9097970019EF17 /* LatestListingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestListingsViewModelTests.swift; sourceTree = "<group>"; };
+		49C5CC1F2E90A5000019EF17 /* ListingsIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsIntegrationTests.swift; sourceTree = "<group>"; };
 		49F630852E8F4E5200167ABA /* TradeMe-Hardeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TradeMe-Hardeep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -224,6 +226,7 @@
 		49C5CBB92E9090690019EF17 /* TradeMe-AppTests */ = {
 			isa = PBXGroup;
 			children = (
+				49C5CC1F2E90A5000019EF17 /* ListingsIntegrationTests.swift */,
 				49C5CBBF2E9097970019EF17 /* LatestListingsViewModelTests.swift */,
 				49C5CBB82E9090690019EF17 /* ListingsLoaderTests.swift */,
 			);
@@ -358,6 +361,7 @@
 			files = (
 				49C5CBC02E9097980019EF17 /* LatestListingsViewModelTests.swift in Sources */,
 				49C5CBBA2E9090690019EF17 /* ListingsLoaderTests.swift in Sources */,
+				49C5CC202E90A50C0019EF17 /* ListingsIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

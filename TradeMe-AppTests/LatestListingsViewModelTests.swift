@@ -42,7 +42,7 @@ final class LatestListingsViewModelTests: XCTestCase {
     
     func test_fetchListings_error_clearsItems_andSetsAlert() async {
         
-        let (sut, client) = makeSUT(result: .failure(AnyError.failed))
+        let (sut, _) = makeSUT(result: .failure(AnyError.failed))
         sut.listings = [makeUIOPlaceholder()]
         
         await sut.fetchListings()
