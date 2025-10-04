@@ -31,6 +31,7 @@
 		4960A75F2E8FD208005017C8 /* MockListingLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4960A75E2E8FD203005017C8 /* MockListingLoader.swift */; };
 		49C5CBB62E908C480019EF17 /* LaunchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5CBB52E908C430019EF17 /* LaunchCoordinator.swift */; };
 		49C5CBBA2E9090690019EF17 /* ListingsLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5CBB82E9090690019EF17 /* ListingsLoaderTests.swift */; };
+		49C5CBC02E9097980019EF17 /* LatestListingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C5CBBF2E9097970019EF17 /* LatestListingsViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		49C5CBB42E908A410019EF17 /* TradeMe-UnitTest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "TradeMe-UnitTest.xctestplan"; sourceTree = "<group>"; };
 		49C5CBB52E908C430019EF17 /* LaunchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCoordinator.swift; sourceTree = "<group>"; };
 		49C5CBB82E9090690019EF17 /* ListingsLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsLoaderTests.swift; sourceTree = "<group>"; };
+		49C5CBBF2E9097970019EF17 /* LatestListingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestListingsViewModelTests.swift; sourceTree = "<group>"; };
 		49F630852E8F4E5200167ABA /* TradeMe-Hardeep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TradeMe-Hardeep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -222,6 +224,7 @@
 		49C5CBB92E9090690019EF17 /* TradeMe-AppTests */ = {
 			isa = PBXGroup;
 			children = (
+				49C5CBBF2E9097970019EF17 /* LatestListingsViewModelTests.swift */,
 				49C5CBB82E9090690019EF17 /* ListingsLoaderTests.swift */,
 			);
 			path = "TradeMe-AppTests";
@@ -353,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C5CBC02E9097980019EF17 /* LatestListingsViewModelTests.swift in Sources */,
 				49C5CBBA2E9090690019EF17 /* ListingsLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
