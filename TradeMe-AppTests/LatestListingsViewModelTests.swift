@@ -58,7 +58,7 @@ final class LatestListingsViewModelTests: XCTestCase {
 
 // MARK: - Test doubles & helpers
 
-private final class MockListingLoader: ListingLoader {
+private final class MockListingLoader: ListingsLoader {
     enum Result {
         case success([Listing])
         case failure(Error)
@@ -78,7 +78,7 @@ private final class MockListingLoader: ListingLoader {
     
 }
 
-private func makeSUT(result: MockListingLoader.Result) -> (sut: LatestListingsViewModel, client: ListingLoader) {
+private func makeSUT(result: MockListingLoader.Result) -> (sut: LatestListingsViewModel, client: ListingsLoader) {
     let loader = MockListingLoader(result: result)
     let vm = LatestListingsViewModel(listingsLoader: loader)
     return (vm, loader)

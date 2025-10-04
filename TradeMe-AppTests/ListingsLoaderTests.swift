@@ -11,7 +11,7 @@ import XCTest
 @MainActor
 final class ListingsLoaderTests: XCTestCase {
     
-    private func makeSUT(response: MockHTTPClient.ResponseType) -> (sut: ListingLoader, client: MockHTTPClient) {
+    private func makeSUT(response: MockHTTPClient.ResponseType) -> (sut: ListingsLoader, client: MockHTTPClient) {
         let client = MockHTTPClient(responseType: response)
         let sut = RemoteListingsLoader(httpClient: client)
         return (sut, client)

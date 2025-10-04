@@ -1,8 +1,8 @@
 //
-//  ListingUseCase.swift
+//  ListingsLoader.swift
 //  TradeMe-Hardeep
 //
-//  Created by Hardeep Singh on 03/10/25.
+//  Created by Hardeep Singh on 04/10/25.
 //
 
 import Foundation
@@ -28,21 +28,6 @@ struct Listing {
     
 }
 
-protocol ListingLoader {
+protocol ListingsLoader {
     func execute() async throws -> [Listing]
-}
-
-class RemoteListingsLoader: ListingLoader {
-    
-    let httpClient: HTTPClient
-    
-    init(httpClient: HTTPClient) {
-        self.httpClient = httpClient
-    }
-    
-    func execute() async throws -> [Listing] {
-        let endPoint = Endpoints.Listings.latest(rows: 20)
-        return ListingMapper.map(response: try await httpClient.get(url: endPoint))
-    }
-    
 }

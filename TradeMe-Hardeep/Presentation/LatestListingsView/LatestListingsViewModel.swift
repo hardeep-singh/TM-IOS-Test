@@ -49,9 +49,9 @@ class LatestListingsViewModel: ObservableObject {
     
     @Published var listings: [UIOListing] = []
     @Published var alertItem: AlertItemType?
-    let listingsLoader: ListingLoader
+    let listingsLoader: ListingsLoader
     
-    init(listingsLoader: ListingLoader) {
+    init(listingsLoader: ListingsLoader) {
         self.listingsLoader = listingsLoader
     }
     
@@ -84,6 +84,7 @@ private extension UIOListing {
         if let price = dto.buyNowPrice {
             buyNowPrice = price.formatted(
                 .currency(code: "NZD")
+                .presentation(.narrow)
                 .precision(.fractionLength(2)))
         }
             

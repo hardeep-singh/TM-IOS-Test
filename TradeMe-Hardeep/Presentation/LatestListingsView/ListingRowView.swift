@@ -19,7 +19,7 @@ struct ListingRowView: View {
     }
     private enum Layout {
         static let cellHeight: CGFloat = 100
-        static let imageCornerRadius: CGFloat = 8
+        static let imageCornerRadius: CGFloat = 5
         static let rowSpacing: CGFloat = 12
     }
     
@@ -43,7 +43,7 @@ struct ListingRowView: View {
                 Text(listing.location)
                     .font(.tmSubtitle1)
                     .foregroundColor(.tmTextLight)
-                    .lineLimit(2)
+                    .lineLimit(1)
                     .addAccessibility(model: Constants.DiscoverScreenRow.locationAccessibility,
                                       value: listing.location)
                 
@@ -51,6 +51,8 @@ struct ListingRowView: View {
                     .font(.tmTitle1)
                     .foregroundColor(.tmTextDark)
                     .lineLimit(2)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .layoutPriority(2)
                     .addAccessibility(model: Constants.DiscoverScreenRow.titleAccessibility,
                                       value: listing.title)
                 
