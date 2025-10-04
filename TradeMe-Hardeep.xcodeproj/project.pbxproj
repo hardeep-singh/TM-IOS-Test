@@ -56,7 +56,7 @@
 		4960A6492E8F572A005017C8 /* String+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Constants.swift"; sourceTree = "<group>"; };
 		4960A64B2E8F5752005017C8 /* ImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageName.swift; sourceTree = "<group>"; };
 		4960A64D2E8F5760005017C8 /* Colors+Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Typography.swift"; sourceTree = "<group>"; };
-		4960A64F2E8F59EA005017C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4960A64F2E8F59EA005017C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4960A6512E8F5A89005017C8 /* TMPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMPlaceholderView.swift; sourceTree = "<group>"; };
 		4960A6532E8F7559005017C8 /* LatestListingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestListingsViewModel.swift; sourceTree = "<group>"; };
 		4960A6552E8F7590005017C8 /* UIOListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIOListing.swift; sourceTree = "<group>"; };
@@ -99,11 +99,11 @@
 		4960A6342E8F552B005017C8 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				4960A6332E8F552B005017C8 /* TradeMeApp.swift */,
 				49C5CBB52E908C430019EF17 /* LaunchCoordinator.swift */,
 				4960A6482E8F5715005017C8 /* Constants */,
 				4960A6302E8F552B005017C8 /* Assets.xcassets */,
 				4960A6322E8F552B005017C8 /* LaunchScreen.storyboard */,
-				4960A6332E8F552B005017C8 /* TradeMeApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -123,8 +123,8 @@
 		4960A6362E8F552B005017C8 /* TradeMe-Hardeep */ = {
 			isa = PBXGroup;
 			children = (
-				4960A75D2E8FD1F8005017C8 /* MockListingLoader */,
 				4960A64F2E8F59EA005017C8 /* Info.plist */,
+				4960A75D2E8FD1F8005017C8 /* MockListingLoader */,
 				4960A7522E8FB6CE005017C8 /* Networking */,
 				4960A74D2E8FB0BC005017C8 /* ListingLoader */,
 				4960A6352E8F552B005017C8 /* Presentation */,
