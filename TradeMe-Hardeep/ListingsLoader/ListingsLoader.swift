@@ -28,6 +28,6 @@ struct Listing {
     
 }
 
-protocol ListingsLoader {
+protocol ListingsLoader: Sendable {
     func execute() async throws -> [Listing]
 }

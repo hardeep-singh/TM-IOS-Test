@@ -45,23 +45,41 @@ enum AlertItemType: Identifiable {
     
 }
 
+@MainActor
 class LatestListingsViewModel: ObservableObject {
     
     @Published var listings: [UIOListing] = []
     @Published var alertItem: AlertItemType?
-    let listingsLoader: ListingsLoader
-    
+    nonisolated let listingsLoader: ListingsLoader
+    private var task: Task<Void, Never>?
     init(listingsLoader: ListingsLoader) {
         self.listingsLoader = listingsLoader
     }
     
     func fetchListings() async {
-        do {
-            self.listings = try await listingsLoader.execute().map { UIOListing(dto: $0) }
-        } catch {
-            self.listings = []
-            self.alertItem = .error(error.localizedDescription)
+        if let existingTask = task {
+            await existingTask.value
+            return
         }
+        
+        task = Task { @MainActor in
+            defer { self.task = nil }
+            do {
+                let fetchedListings = try await listingsLoader.execute().map { UIOListing(dto: $0) }
+                guard !Task.isCancelled else { return }
+                self.listings = fetchedListings
+                self.alertItem = nil
+            } catch {
+                guard !Task.isCancelled else { return }
+                self.listings = []
+                self.alertItem = .error(error.localizedDescription)
+            }
+        }
+        await task?.value
+    }
+    
+    deinit {
+        task?.cancel()
     }
     
 }

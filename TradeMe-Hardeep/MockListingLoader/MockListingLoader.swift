@@ -7,7 +7,7 @@
 
 import Foundation
 
-class MockLoader: ListingsLoader {
+final class MockLoader: ListingsLoader {
     func execute() async throws -> [Listing] {
         return []
     }

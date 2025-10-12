@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol HTTPClient {
+protocol HTTPClient: Sendable {
     func get<T: Decodable>(url: URL) async throws -> T
 }
 
@@ -17,10 +17,10 @@ struct HTTPError: Error, LocalizedError {
     var errorDescription: String? { "HTTP \(status): \(body ?? "")" }
 }
 
-class HTTPClientImp: HTTPClient {
+final class HTTPClientImp: HTTPClient {
     
     let session: URLSession
-    var authenticator: OAuth1Authenticator
+    let authenticator: OAuth1Authenticator
     
     init(session: URLSession = .shared, authenticator: OAuth1Authenticator = OAuth1Authenticator()) {
         self.session = session

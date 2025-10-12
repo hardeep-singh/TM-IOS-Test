@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RemoteListingsLoader: ListingsLoader {
+final class RemoteListingsLoader: ListingsLoader {
     
     let httpClient: HTTPClient
     
@@ -15,7 +15,7 @@ class RemoteListingsLoader: ListingsLoader {
         self.httpClient = httpClient
     }
     
-    func execute() async throws -> [Listing] {
+    nonisolated func execute() async throws -> [Listing] {
         let endPoint = Endpoints.Listings.latest(rows: 20)
         return ListingMapper.map(response: try await httpClient.get(url: endPoint))
     }
